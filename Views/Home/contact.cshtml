@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>contact us</title>
+   <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+
+</head>
+<body class="bodi" style="background-color:lightgray;color:black" >
+    
+    <nav class="nav navbar-default col-md-12 logo " role="navigation" style="background-color:black">
+        <div class="navbar-header ">
+            <h1 class="active" style="padding-left:20px ;font-family:Andalus;color:goldenrod"> TrendZone </h1>
+        </div>
+        <div>
+      <ul class="nav navbar-nav pull-right">
+        <li>@Html.ActionLink("Home", "Index","Home")</li>
+        <li>@Html.ActionLink("About Us", "aboutus","Home")</li>                
+          <li>@Html.ActionLink("Contact Us", "contact","Home")</li>        
+          <li>@Html.ActionLink("Login", "login","Home")</li>
+         <li>@Html.ActionLink("Register", "register","Home")</li>
+      </ul>
+       </div>
+    </nav>
+        <div class="collapse navbar-collapse navbar-ex1-collapse afterlogo" style="background-color:goldenrod">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Casual<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="menu1">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "des1","casualDes1")</li>
+                    <li>@Html.ActionLink("Maria B", "mariab","casualDes1")</li>
+
+                     <li><a href="#">Fahad Hussayn Couture</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                        <li><a href="#">Sana Safinaz</a></li>
+
+
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul1">
+                    <li>@Html.ActionLink("Ego", "ego","Formal")</li>
+                    <li>@Html.ActionLink("Labels", "label","Formal")</li>
+                      <li><a href="#">khadii</a></li>
+                      <li><a href="#">Outlet</a></li>
+                      <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bridal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul5">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "hsybridal","Bridal")</li>
+                    <li>@Html.ActionLink("Sana Safinaz", "sanasafina","Bridal")</li>
+                    <li><a href="hsybridal.html">Fahad Hussayn Couture </a></li>
+                      <li><a href="#">Maria B</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                                          <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shoes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul4">
+                    <li>@Html.ActionLink("Heels", "heel","Shoes")</li>
+                    <li>@Html.ActionLink("Flat", "flat","Shoes")</li>                    
+                      <li><a href="#">Pumps</a></li>
+                      <li><a href="#">Wedges</a></li>
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accessories<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul2">
+                    <li>@Html.ActionLink("Earrings", "earrings","Accessories")</li>
+                    <li>@Html.ActionLink("Rings", "rings","Accessories")</li>
+                      
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bags<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul3">
+                    <li><a href="handbag.html">Handbags</a></li>
+                      <li><a href="clutch.html">Clutches</a></li>
+                      
+                    </ul>
+                        </li>
+                                  
+                    </ul>
+    </div>
+       <div class="container">
+
+        <!-- begin:article -->
+      <div class="row">
+        <div class="col-md-3 col-sm-4 sidebar">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="widget">
+                <h3 style="color:black">Contact Information</h3>
+                <address  style="color:black">
+                  1-234-567-8900<br />
+                  shop # 6,Fortress square<br />
+                  Lahore<br />
+                  bcsf11m043@pucit.edu.pk<br/>
+                  <abbr title="Phone"  style="color:black">Mobile :</abbr> +628995001222<br />
+                </address>
+              </div>
+              
+              <div class="widget">
+                <h3  style="color:black">Customer Service</h3>
+                <address  style="color:black">
+                  <strong >Sana Ashraf</strong><br />
+                  226-240-8240<br />
+                  <a href="mailto:#">Sana@clotheshop.com</a>
+                </address>
+                <address  style="color:black">
+                  <strong>Ayesha Aslam</strong><br />
+                  226-907-8810<br />
+                  <a href="mailto:#">Ayesha@clotheshop.com</a>
+                </address>
+     
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9 col-sm-8 content">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Contact</li>
+              </ol>
+            </div>
+          </div>
+             <div class="row">
+            <div class="col-md-12">
+              <div class="page-header">
+                  <h2  style="color:black">Contact Us </h2>
+              </div>
+          
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54417.38176457077!2d74.40547235000001!3d31.521787949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919050e085e7535%3A0xfbf788dae725f245!2sLahore+Cantt.%2C+Lahore%2C+Pakistan!5e0!3m2!1sen!2s!4v1420287941449" width="800" height="450" frameborder="0" style="border:0"></iframe>             
+                   <h3  style="color:black" >Trend Zone</h3>
+              <p>TrendZone is a </p>
+              <br>
+              <form role="form"  style="color:black">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="email" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea rows="5" class="form-control"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:article -->
+        </div>
+   
+     <!-- begin:copyright -->
+        <div class="col-md-12 copyright">
+          <div class="row">
+      <div class="row" style=" background-color:black ">
+            <div class="col-md-8 col-sm-8 copyright-left" >
+              <p style="margin-left:350px;color:white">Copyright &copy; Clotheshop 2012-2014. All right reserved.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright-right" >
+      <div class="row" style="background-color:black">
+                <ul class="list-inline text-center">
+                <li><a href="https://www.facebook.com/"><img src="~/img/fb.gif" /></a></li>
+              
+                <li><a href="https://plus.google.com/"><img src="~/img/Google-Icon.png" /></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="~/img/twi%20(1).png" /></a></li>
+                  
+                <li><a href="http://instagram.com/"><img src="~/img/is.gif" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- end:copyright -->
+</body>
+</html>

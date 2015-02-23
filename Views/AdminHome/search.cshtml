@@ -1,0 +1,36 @@
+﻿@model IEnumerable<myZone.Models.product>
+@{
+    Layout = "~/Views/Shared/_HeaderFooter.cshtml";
+ }
+<h2 style="margin-left:500px">Search Result</h2>
+
+<div style="margin-left:500px" id ="1234">
+
+</div>
+<div id="helo">
+
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+ <script>
+    $('document').ready(function () {
+
+                $.getJSON("CheckproductRange?Range=@ViewBag.Range", function (data)
+                {
+
+                    if (data) {
+                        $.each(data, function (index) {
+
+
+                            $('#1234').append("<h4 >Price : Rs " + data[index].price + "</h4><h5>Name : "+data[index].title+"</h5>"+"</p> <br/>");
+
+                        });
+                      
+                    }
+                    else {
+                        $('#helo').append("<h4 >No Results found !!</h4>");
+                    }
+                });
+
+            });
+
+</script>

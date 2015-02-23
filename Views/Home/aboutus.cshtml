@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>about</title>
+   <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+
+</head>
+<body class="bodi" style="background-color:lightgray;color:black" >
+    
+    <nav class="nav navbar-default col-md-12 logo " role="navigation" style="background-color:black">
+        <div class="navbar-header ">
+            <h1 class="active" style="padding-left:20px ;font-family:Andalus;color:goldenrod"> TrendZone </h1>
+        </div>
+        <div>
+      <ul class="nav navbar-nav pull-right">
+        <li>@Html.ActionLink("Home", "Index","Home")</li>
+        <li>@Html.ActionLink("About Us", "aboutus","Home")</li>                
+          <li>@Html.ActionLink("Contact Us", "contact","Home")</li>        
+          <li>@Html.ActionLink("Login", "login","Home")</li>
+         <li>@Html.ActionLink("Register", "register","Home")</li>
+      </ul>
+       </div>
+    </nav>
+        <div class="collapse navbar-collapse navbar-ex1-collapse afterlogo" style="background-color:goldenrod">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Casual<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="menu1">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "des1","casualDes1")</li>
+                    <li>@Html.ActionLink("Maria B", "mariab","casualDes1")</li>
+                   <li>@Html.ActionLink("Tina daurani", "mariab","casualDes1")</li>
+                    <li>@Html.ActionLink("Sana safinaz", "mariab","casualDes1")</li>
+
+
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul1">
+                    <li>@Html.ActionLink("Ego", "ego","Formal")</li>
+                    <li>@Html.ActionLink("Labels", "label","Formal")</li>
+                    <li>@Html.ActionLink("Khadii", "label","Formal")</li>
+
+                    <li>@Html.ActionLink("Outlets", "label","Formal")</li>
+
+                      
+
+                    </ul>
+                        </li>
+                    
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bridal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul5">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "hsybridal","Bridal")</li>
+                    <li>@Html.ActionLink("Sana Safinaz", "sanasafina","Bridal")</li>
+                      <li>@Html.ActionLink("Maria b", "sanasafina","Bridal")</li>
+                    <li>@Html.ActionLink("Ranja", "sanasafina","Bridal")</li>
+
+                 
+
+                    </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shoes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul4">
+                    <li>@Html.ActionLink("Heels", "heel","Shoes")</li>
+                    <li>@Html.ActionLink("Flat", "flat","Shoes")</li>
+                    <li>@Html.ActionLink("Pumps", "flat","Shoes")</li>                    
+                    
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accessories<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul2">
+                    <li>@Html.ActionLink("Earrings", "earrings","Accessories")</li>
+                    <li>@Html.ActionLink("Rings", "rings","Accessories")</li>
+                      
+                    </ul>
+                        </li>
+                   
+                    <li class="pull-right" style="margin-left:480px;margin-top:15px">
+							<input type="text" class="field small-field" />
+							<input type="submit" class="button" value="search" />
+                    </li>
+                                  
+                    </ul>
+    </div>
+        
+        
+
+       <div class="container">
+        <div class="row" style="padding-left:10px; padding-right:10px">
+            <div class="col-md-12">
+              <ol class="breadcrumb " style="background-color:white">
+                <li><a href="#">Home</a></li>
+                <li class="active">AboutUs</li>
+              </ol>
+            </div>
+          </div>
+        <div class="container">
+  <div class="jumbotron" style="background-color:white">
+    <h1 style="color:black">Trend Zone</h1>      
+    <p style="color:black">TrendZone emerged onto a non-existent fashion scene in 1996 and pioneered casual western clothing in Pakistan. TrendZone has always been a proactive store, since its inception it has evolved a number of times keeping in line with ongoing international fashion trends. TrendZone opened the first Original Levis store in Pakistan retailing Levis & Dockers products.</p>      
+  </div>
+            <div class="row">
+    <div class="col-md-4">
+        <h3 style="color:black">Who we are</h3>
+      <p style="color:black">TrendZone is one of the fastest growing new entrants into the Pakakistan.Our diverse styling ranges from trendy cut printed kurtas to traditional jumpsuits and party wear.
+</p>
+    
+            </div>
+    <div class="col-md-4"> 
+                <h3 style="color:black">Our team</h3>
+
+      <p style="color:black">Currently TrendZone retail Elan by Khadijah Shah, Umar Sayeed, HSY, Ammara Khan, Faiza Samee, Sania Maskati, Sara Shahid and many more all under one roof to provide you with a vast wardrobe choice to suit your personality and mood.
+
+</p>
+    </div>
+    <div class="col-md-4"> 
+                <h3 style="color:black">Stores</h3>
+        <ul style="color:black">
+            <li>Lahore</li>
+            <li>Karachi</li>
+            <li>Islamabad</li>
+            <li>Faislabad</li>
+
+
+
+        </ul>
+    </div>
+</div>
+</div>
+           </div>
+         <!-- begin:copyright -->
+        <div class="col-md-12 copyright">
+          <div class="row">
+      <div class="row" style=" background-color:black ">
+            <div class="col-md-8 col-sm-8 copyright-left" >
+              <p style="margin-left:350px;color:white">Copyright &copy; Clotheshop 2012-2014. All right reserved.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright-right" >
+      <div class="row" style="background-color:black">
+              <ul class="list-inline text-center">
+                <li><a href="https://www.facebook.com/"><img src="~/img/fb.gif" /></a></li>
+              
+                <li><a href="https://plus.google.com/"><img src="~/img/Google-Icon.png" /></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="~/img/twi%20(1).png" /></a></li>
+                  
+                <li><a href="http://instagram.com/"><img src="~/img/is.gif" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      <!-- end:copyright -->
+    </body>
+</html>

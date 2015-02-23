@@ -1,0 +1,198 @@
+﻿@model myZone.Models.user
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>login</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+     <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body class="bodi" style="background-color:lightgray;color:black" >
+    
+    <nav class="nav navbar-default col-md-12 logo " role="navigation" style="background-color:black">
+        <div class="navbar-header ">
+            <h1 class="active" style="padding-left:20px ;font-family:Andalus;color:goldenrod"> TrendZone </h1>
+        </div>
+        <div>
+      <ul class="nav navbar-nav pull-right">
+        <li>@Html.ActionLink("Home", "Index","Home")</li>
+        <li>@Html.ActionLink("About Us", "aboutus","Home")</li>                
+          <li>@Html.ActionLink("Contact Us", "contact","Home")</li>        
+          <li>@Html.ActionLink("Login", "login","Home")</li>
+         <li>@Html.ActionLink("Register", "register","Home")</li>
+      </ul>
+       </div>
+    </nav>
+        <div class="collapse navbar-collapse navbar-ex1-collapse afterlogo" style="background-color:goldenrod">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Casual<span class="caret"></span></a>
+               <ul class="dropdown-menu" id="menu1">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "des1","casualDes1")</li>
+                    <li>@Html.ActionLink("Maria B", "mariab","casualDes1")</li>
+
+                     <li><a href="#">Fahad Hussayn Couture</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                        <li><a href="#">Sana Safinaz</a></li>
+
+
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul1">
+                    <li>@Html.ActionLink("Ego", "ego","Formal")</li>
+                    <li>@Html.ActionLink("Labels", "label","Formal")</li>
+                      <li><a href="#">khadii</a></li>
+                      <li><a href="#">Outlet</a></li>
+                      <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bridal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul5">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "hsybridal","Bridal")</li>
+                    <li>@Html.ActionLink("Sana Safinaz", "sanasafina","Bridal")</li>
+                    <li><a href="hsybridal.html">Fahad Hussayn Couture </a></li>
+                      <li><a href="#">Maria B</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                                          <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shoes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul4">
+                    <li>@Html.ActionLink("Heels", "heel","Shoes")</li>
+                    <li>@Html.ActionLink("Flat", "flat","Shoes")</li>                    
+                      <li><a href="#">Pumps</a></li>
+                      <li><a href="#">Wedges</a></li>
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accessories<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul2">
+                    <li>@Html.ActionLink("Earrings", "earrings","Accessories")</li>
+                    <li>@Html.ActionLink("Rings", "rings","Accessories")</li>
+                      
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bags<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul3">
+                    <li><a href="handbag.html">Handbags</a></li>
+                      <li><a href="clutch.html">Clutches</a></li>
+                      
+                    </ul>
+                        </li>
+                                  
+                    </ul>
+    </div>
+        <div class="container" style="color:black">
+
+   
+        <div class="row" style="padding-left:10px; padding-right:10px">
+            <div class="col-md-12">
+              <ol class="breadcrumb " style="background-color:white">
+                <li><a href="#">Home</a></li>
+                <li class="active">Login</li>
+              </ol>
+            </div>
+          </div>
+      <h2 class="main-heading text-center">
+				Login
+				
+			</h2>
+    <!-- Login Panel Starts -->
+    <div class="row col-md-12">
+						<div class="panel panel-smatter text-center">
+							<div class="panel-heading">
+								<h3 class="panel-title" style="font-family:Arial">Please login using your existing account</h3>
+							</div>
+							<div class="panel-body text-center" >
+							
+							<!-- Login Form Starts -->
+								
+                                          
+
+                        @using (Html.BeginForm("loginUser", "Home", FormMethod.Post))
+                        {
+                            <div class="col-md-6" style="background-color:white">
+                            <table style="margin-left:400px">
+                                
+                                    
+                            <tr><td>@Html.Label("UserName", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.name, new { name="n",id="n"})
+                                        @Html.ValidationMessageFor(m=>m.name)</td></tr>
+                                    
+                                  <tr><td>@Html.Label("Password", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.paswd, new { name="em"})
+                                        @Html.ValidationMessageFor(m=>m.paswd)
+                                    </td></tr>
+                             
+                                       
+                        
+
+                                
+                            </table>
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-primary" style="margin-left:500px">Login</button>
+                                </div>
+                             
+
+                        }
+                                    
+							<!-- Login Form Ends -->
+							</div>
+						</div>
+        </div>
+					<!-- Login Panel Ends -->
+    </div>
+        <br />
+                <br />
+
+                <br />
+        <br />
+                <br />
+
+                <br />
+
+
+            
+          <!-- begin:copyright -->
+        <div class="col-md-12 copyright">
+          <div class="row">
+      <div class="row" style=" background-color:black ">
+            <div class="col-md-8 col-sm-8 copyright-left" >
+              <p style="margin-left:350px;color:white">Copyright &copy; Clotheshop 2012-2014. All right reserved.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright-right" >
+      <div class="row" style="background-color:black">
+              <ul class="list-inline text-center">
+                <li><a href="https://www.facebook.com/"><img src="~/img/fb.gif" /></a></li>
+              
+                <li><a href="https://plus.google.com/"><img src="~/img/Google-Icon.png" /></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="~/img/twi%20(1).png" /></a></li>
+                  
+                <li><a href="http://instagram.com/"><img src="~/img/is.gif" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+              </div>
+            </div>
+      
+      <!-- end:copyright -->
+
+</body>
+</html>

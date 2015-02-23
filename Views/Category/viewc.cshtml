@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_HeaderFooter.cshtml";
+}
+<!-- Table -->
+<!-- Content -->
+ <nav class="nav navbar-default col-md-12 logo " role="navigation" style="background-color:#252a2f">
+        <div class="navbar-header ">
+            <h3 class="active" style="padding-left:20px ;color:goldenrod"> Admin Panel </h3>
+        </div>
+        <div>
+      <ul class="nav navbar-nav pull-right">
+        <li>@Html.ActionLink("Add Item", "addItem","AdminHome")</li>
+        <li>@Html.ActionLink("View All Items", "ViewAll","AdminHome")</li>                
+      
+
+      </ul>
+       </div>
+    </nav>
+<body style="color:black">
+<br />
+			<div id="content" style="color:black">
+				
+				<!-- Box -->
+				<div class="box col-md-10 " style="background-color:white ;margin-left:130px">
+					<!-- Box Head -->
+					<div class="box-head" style="background-color:gray">
+						<h2 class="left">All Items</h2>
+						<div class="pull-right">
+							<label >Search </label>
+							<input type="text" class="field small-field" />
+							<input type="submit" class="button" value="search" />
+						</div>
+					</div>
+					<!-- End Box Head -->	
+
+					<div class="table">
+						<table style="width:100% ;border:0">
+							<tr>
+								<th width="13"></th>
+								<th>Title</th>
+								<th>Category</th>
+                                <th>Brand</th>
+								
+                                 <th>Price</th>
+                              
+								<th width ="110" class="ac">Action</th>
+							</tr>
+                               @foreach(var c in Model){
+							<tr>
+								<td></td>
+								
+                                <td>@c.name</td>
+								<td><a href="/AdminHome/delete/@c.Id">delete</a><a href="/AdminHome/update/@c.Id" style="margin-left:10px">update</a></td>
+							</tr>
+                               }
+							
+						</table>
+						</div>
+                    </div>
+                </body>

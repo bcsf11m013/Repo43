@@ -1,0 +1,232 @@
+﻿@model myZone.Models.custmer
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title ></title>
+    <!-- Google Web Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+	<link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body class="bodi" style="background-color:lightgray;color:black" >
+    
+    <nav class="nav navbar-default col-md-12 logo " role="navigation" style="background-color:black">
+        <div class="navbar-header ">
+            <h1 class="active" style="padding-left:20px ;font-family:Andalus;color:goldenrod"> TrendZone </h1>
+        </div>
+        <div>
+      <ul class="nav navbar-nav pull-right">
+        <li>@Html.ActionLink("Home", "Index","Home")</li>
+        <li>@Html.ActionLink("About Us", "aboutus","Home")</li>                
+          <li>@Html.ActionLink("Contact Us", "contact","Home")</li>        
+          <li>@Html.ActionLink("Login", "login","Home")</li>
+         <li>@Html.ActionLink("Register", "register","Home")</li>
+      </ul>
+       </div>
+    </nav>
+        <div class="collapse navbar-collapse navbar-ex1-collapse afterlogo" style="background-color:goldenrod">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Casual<span class="caret"></span></a>
+               <ul class="dropdown-menu" id="menu1">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "des1","casualDes1")</li>
+                    <li>@Html.ActionLink("Maria B", "mariab","casualDes1")</li>
+
+                     <li><a href="#">Fahad Hussayn Couture</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                        <li><a href="#">Sana Safinaz</a></li>
+
+
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul1">
+                    <li>@Html.ActionLink("Ego", "ego","Formal")</li>
+                    <li>@Html.ActionLink("Labels", "label","Formal")</li>
+                      <li><a href="#">khadii</a></li>
+                      <li><a href="#">Outlet</a></li>
+                      <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bridal<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul5">
+                    <li>@Html.ActionLink("Hassan Shehriyar Yaseen", "hsybridal","Bridal")</li>
+                    <li>@Html.ActionLink("Sana Safinaz", "sanasafina","Bridal")</li>
+                    <li><a href="hsybridal.html">Fahad Hussayn Couture </a></li>
+                      <li><a href="#">Maria B</a></li>
+                       <li><a href="#">Tina Daurani</a></li>
+                                          <li><a href="#">Omer Naeem</a></li>
+
+                    </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shoes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul4">
+                    <li>@Html.ActionLink("Heels", "heel","Shoes")</li>
+                    <li>@Html.ActionLink("Flat", "flat","Shoes")</li>                    
+                      <li><a href="#">Pumps</a></li>
+                      <li><a href="#">Wedges</a></li>
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accessories<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul2">
+                    <li>@Html.ActionLink("Earrings", "earrings","Accessories")</li>
+                    <li>@Html.ActionLink("Rings", "rings","Accessories")</li>
+                      
+                    </ul>
+                        </li>
+                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bags<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="Ul3">
+                    <li><a href="handbag.html">Handbags</a></li>
+                      <li><a href="clutch.html">Clutches</a></li>
+                      
+                    </ul>
+                        </li>
+                                  
+                    </ul>
+    </div>
+
+
+       <div class="container" style="color:black">
+        <div class="row" style="padding-left:10px; padding-right:10px">
+            <div class="col-md-12">
+              <ol class="breadcrumb " style="background-color:white">
+                <li><a href="#">Home</a></li>
+                <li class="active">Register</li>
+              </ol>
+            </div>
+          </div>
+    <h2 class="main-heading text-center">
+				Register 
+				
+			</h2>
+    <!-- Registration Block Starts -->
+            <div class="col-md-9" style="margin-top:10px;margin-left:100px">
+    <!-- Registration Block Starts -->
+						<div class="panel panel-smart" >
+							<div class="panel-heading">
+								<h3 class="panel-title text-center" style="font-family:Arial; color:black">Create New Account</h3>
+							</div>
+							<div class="panel-body text-center">
+							<!-- Registration Form Starts -->
+                                 <div class="col-md-6" style="margin-top:10px">
+                        @using (Html.BeginForm("addMember", "Home", FormMethod.Post))
+                        {
+                            <div class="col-md-9" style="margin-left:200px">
+                            <table>
+                                
+                                    
+                            <tr><td>@Html.Label("UserName", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.username, new { name="username",id="n"})
+                                        @Html.ValidationMessageFor(m=>m.username)<input type="button" id="b1" value="Check" /><div id="result"></div></td></tr>
+                                    
+                                  <tr><td>@Html.Label("Email", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.email, new { name="email"})
+                                        @Html.ValidationMessageFor(m=>m.email)
+                                    </td></tr>
+
+                                <tr><td>@Html.Label("Phone", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.phone, new { name="phone"})</td></tr>
+
+                                <tr><td>@Html.Label("Country", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                        
+                                    <td>@Html.TextBoxFor(model => model.country, new { name="country"})</td></tr>
+
+                             <tr> <td>@Html.Label("Pasword", new { @class = "col-md-4", style = "font-size:large;margin-top:20px" }) </td>
+                                   <td>@Html.TextBoxFor(model => model.pswd, new { name="pswd"})
+                                        @Html.ValidationMessageFor(m=>m.pswd) 
+                                   </td></tr>
+                             
+                                       
+                        
+
+                                
+                            </table>
+                                <br />
+                                <br />
+                                <input type="submit" class="btn btn-primary" value="register" style="margin-left:100px"/>
+                                </div>
+                             
+
+                        }
+                    </div>
+                                    </div>
+                            </div>
+           </div>
+						@Scripts.Render("~/bundles/jquery")
+    <script>
+
+        $(document).ready(function () {
+
+          //  $('#checking').hide();
+
+            $('#b1').click(function () {
+               
+                var userName = $('#n').val();
+
+                //alert('User Name ='+ userName);
+                $('#checking').show();
+                $.getJSON("/home/CheckUserName?n=" + userName, function (data)
+                {
+                    $('#checking').hide();
+                    if (data) {
+                        $('#result').text("User already exists in database");
+                        
+                    }
+                    else {
+                        $('#result').text("User Name is available");
+                    }
+                });
+
+            });
+
+        });
+    </script>
+           </div>
+ 
+                               
+								<!-- Personal Information Ends -->
+      <!-- begin:copyright -->
+        <div class="col-md-12 copyright">
+          <div class="row">
+      <div class="row" style=" background-color:black ">
+            <div class="col-md-8 col-sm-8 copyright-left" >
+              <p style="margin-left:350px;color:white">Copyright &copy; Clotheshop 2012-2014. All right reserved.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 copyright-right" >
+      <div class="row" style="background-color:black">
+              <ul class="list-inline text-center">
+                <li><a href="https://www.facebook.com/"><img src="~/img/fb.gif" /></a></li>
+              
+                <li><a href="https://plus.google.com/"><img src="~/img/Google-Icon.png" /></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="~/img/twi%20(1).png" /></a></li>
+                  
+                <li><a href="http://instagram.com/"><img src="~/img/is.gif" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      <!-- end:copyright -->
+</body>
+</html>
+
+
+
+
